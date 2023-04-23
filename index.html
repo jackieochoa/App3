@@ -130,7 +130,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 			<br><br><br>
 		</form>
 		
-		<a href="#three" class="w3-btn w3-grey w3-round">CLick for Results!</a>
+		<a href="#three" class="w3-btn w3-grey w3-round">Click for Results!</a>
 	</center>
 </div>
 
@@ -142,7 +142,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     </div>
     <center>
         <div id="content4" class="w3-container">
-            <p>Based on your answers, you are most like...:</p>
+            <p>Based on your answers, you are most like...</p>
+	<!--Stopped here because I don't have time to finish-->
         </div>
         <script>
                 var color = document.querySelector('input[name="color"]:checked').value;
@@ -167,9 +168,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                 } else if (color === "option4" && hobby === "option2") {
                     result = "Princess Ariel!";
                 }
-
-                // Display result on page.
-                document.getElementById("result").innerHTML = result;
         </script>
         <p id="result"></p>
     </center>
