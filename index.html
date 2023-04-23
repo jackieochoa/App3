@@ -172,12 +172,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
                 // Display result on page.
                 document.getElementById("result").innerHTML = result;
             }
-	calculateResult()
+
+            // Event listener for "Click for Results!" button.
+            document.getElementById("three").addEventListener("click", function(event) {
+                if (event.target && event.target.id === "calculateResultBtn") {
+                    calculateResult();
+                }
+            });
         </script>
         <p id="result"></p>
+        <!-- Add an ID to the button to be used in the event listener -->
+        <a id="calculateResultBtn" href="#three" class="w3-btn w3-grey w3-round">Click for Results!</a>
     </center>
 </div>
-  
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
