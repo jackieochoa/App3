@@ -24,69 +24,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
   <!--Formatting source information and webpage title.-->
   <head>
-    <title>APP NAME GOES HERE</title>
+    <title>Disney Princess Personality Quiz</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="w3-colors-flat.css">
   </head>
-
-  
-
-<!--Javascript code.-->
-<script>
-	var exampleVariable1 = 0;
-	var exampleVariable2 = 0;
-	var exampleVariable3 = 0;
-	
-	function exampleFunction1()
-	{
-		// Assigns values to existing variables based on user input. The parseFloat() function converts string values to numerical values.
-    		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 + exampleVariable2;
-		
-		alert("You just ran an addition function!");
-		console.log("Addition function was run.");
-	}
-	
-	function exampleFunction2()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 * exampleVariable2;
-		
-		alert("You just ran a multiplication function!");
-		console.log("Multiplication function was run.");
-	}
-	
-	function exampleFunction3()
-	{
-		exampleVariable1 = parseFloat(document.getElementById("firstInputBox").value);
-    		exampleVariable2 = parseFloat(document.getElementById("secondInputBox").value);
-		
-		exampleVariable3 = exampleVariable1 ** exampleVariable2;
-		
-		alert("You just ran an exponent function!");
-		console.log("Exponent function was run.");
-	}
-	
-	function exampleResultsFunction()
-	{
-		document.getElementById("endResults").innerHTML = "Your final result is: " + exampleVariable3;
-		resetVariables();
-	}
-	
-	function resetVariables()
-	{
-		exampleVariable1 = 0;
-		exampleVariable2 = 0;
-		exampleVariable3 = 0;
-	}
-</script>
-  
   
  
 <!--CSS webpage style/format settings.-->
@@ -114,20 +57,19 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 
-<!--Main HTML body section.-->
 <body>
   <!--Landing page content.-->
   <div id="content" class="w3-container">
   	<!--Header!-->
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>APP NAME GOES HERE</h1>
+		<h1>Personality Quiz</h1>
 	</div>
 	
-	  <p>INTRODUCTION/DESCRIPTION OF APP GOES HERE</p>
+	  <p>Take this quiz to find out what Disney Princess you are!</p>
 	
-	  <a href="#one" class="w3-btn w3-grey w3-round">Get Started!</a>
+	  <a href="#one" class="w3-btn w3-grey w3-round">Start here!</a>
 	
-	  <p>The following code has been developed by students and/or researchers of the Freshman Research Initiative Maker Space Stream at The University of Texas at Austin. This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code does so at their own risk. Members of the Maker Space Stream, FRI, and The University of Texas system are not liable for anything related to this code. THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION!</p>
+	  <p>The following quiz was created for entertainment and should not be taken serious :D</p>
   
   
   
@@ -140,68 +82,112 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
   <center>
     
     	<div id="content2" class="w3-container">
-        	<p>QUESTION 1 GOES HERE</p>    
+        	<p>What are your favorite colors?</p>    
     	</div>
 	
-	<!--Form element. This allows for user input in HTML.-->
+	<!--Form element for first question.-->
 	<form>
 		<!--Label for first input field.-->
-		<label for="firstInputBox">Enter a number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="firstInputBox" value="0"><br>
+		<input type="radio" id="option1" name="color" value="option1">
+		<label for="option1">Blue</label><br>
 		<!--Label for second input field.-->
-		<label for="secondInputBox">Enter another number:</label><br>
-		<!--User input box.-->
-		<input type="number" id="secondInputBox" value="0">
+		<input type="radio" id="option2" name="color" value="option2">
+		<label for="option2">Pink</label><br>
+		<!--Label for third input field.-->
+		<input type="radio" id="option3" name="color" value="option3">
+		<label for="option3">Yellow</label><br>
+		<!--Label for fourth input field.-->
+		<input type="radio" id="option4" name="color" value="option4">
+		<label for="option4">Green</label><br>
 		
 		<br><br><br>
 	</form>
-      
-  <a href="#finalpage" onclick="exampleFunction1();" class="w3-btn w3-grey">Button 1</a>
-  <a href="#finalpage" onclick="exampleFunction2();" class="w3-btn w3-grey">Button 2</a>
-  <a href="#finalpage" onclick="exampleFunction3();" class="w3-btn w3-grey">Button 3</a>
-    
-  </center>
-</div>  
-  
-  
-  
+	
+	<a href="#two" class="w3-btn w3-grey w3-round">Next</a>
+</div>
 
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-<!--LAST SUBPAGE-->
-<div id="finalpage" class="page">
-	<div id="finalheader" class="w3-container w3-flat-carrot">
-		<h1>FINAL PAGE TITLE GOES HERE</h1>
+
+<!--SECOND SUBPAGE-->
+<div id="two" class="page">
+	<div id="header3" class="w3-container w3-flat-carrot">
+		<h1>Question 2</h1>
 	</div>
 	
-  <center>
-    
-	  <div id="finalcontent" class="w3-container">
-		  <p id="endResults">FINAL PAGE CONTENT GOES HERE</p>
-	  </div>
-  
-  <a class="w3-btn w3-black" onclick="exampleResultsFunction();">Click me!
-    <br>
-    <img id="resultsButtonImg" src="https://i.imgur.com/rZOaHhx.png" width="30" alt="spongebob">
-  </a>
-  <a href="#content" onclick="resetVariables();" class="w3-btn w3-black">Return to Home Page</a>
-    
-  </center>
+	<center>
+		<div id="content3" class="w3-container">
+			<p>Do you like to be indoors or outdoors?</p>    
+		</div>
+		
+		<!--Form element for second question.-->
+		<form>
+			<!--Label for first input field.-->
+			<input type="radio" id="option5" name="hobby" value="option5">
+			<label for="option5">Indoors</label><br>
+			<!--Label for second input field.-->
+			<input type="radio" id="option6" name="hobby" value="option6">
+			<label for="option6">Outdoors</label><br>
+			
+			<br><br><br>
+		</form>
+		
+		<a href="#three" class="w3-btn w3-grey w3-round">Next</a>
+	</center>
 </div>
-  
+
+
+<!--THIRD SUBPAGE-->
+<div id="three" class="page">
+	<div id="header4" class="w3-container w3-flat-carrot">
+		<h1>Results</h1>
+	</div>
+	
+	<center>
+		<div id="content4" class="w3-container">
+			<p>Based on your answers, your most like...:</p>    
+		</div>
+		
+		<script>
+			function calculateResult() {
+				var color = document.querySelector('input[name="color"]:checked').value;
+				var hobby = document.querySelector('input[name="hobby"]:checked').value;
+				
+				// Calculate result based on user input.
+				var result;
+				if (color === "option1" && hobby === "option1") {
+					result = "Princess Cinderella!";
+				} else if (color === "option1" && hobby === "option2") {
+					result = "Princess Snow White!";
+				} else if (color === "option2" && hobby === "option1") {
+					result = "Sleepying Beauty!";
+				} else if (color === "option2" && hobby === "option1") {
+					result = "Rapunzel!";
+				} else if (color === "option3" && hobby === "option1") {
+					result = "Princess Belle!";
+				} else if (color === "option3" && hobby === "option2") {
+					result = "Pocahontas!";
+				} else if (color === "option4" && hobby === "option1") {
+					result = "Princess Tiana!";
+				} else if (color === "option4" && hobby === "option2") {
+					result = "Princess Ariel!";
+				
+				// Display result on page.
+				document.getElementById("result").innerHTML = result;
+			}
+		</script>
+		<p id="result"></p>
+		
+		<br><br>
+		
+		<!--Button to calculate and display results.-->
+		<button onclick="calculateResult()" class="w3-btn w3-grey w3-round">Get Results</button>
+	</center>
+</div>
+
   
   
 <!--Footer!-->
 <footer class="w3-bottom w3-container w3-flat-carrot">
-	<p>YOUR NAME (or anything you want) HERE</p>
+	<p>Jaqueline Ochoa</p>
 </footer>
 </div>
 
