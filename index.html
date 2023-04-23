@@ -137,54 +137,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <!--THIRD SUBPAGE-->
 <div id="three" class="page">
-	<div id="header4" class="w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
-	
-	<center>
-		<div id="content4" class="w3-container">
-			<p>Based on your answers, your most like...:</p>    
-		</div>
-		
-		<script>
-			function calculateResult() {
-				var color = document.querySelector('input[name="color"]:checked').value;
-				var hobby = document.querySelector('input[name="hobby"]:checked').value;
-				
-				// Calculate result based on user input.
-				var result;
-				if (color === "option1" && hobby === "option1") {
-					result = "Princess Cinderella!";
-				} else if (color === "option1" && hobby === "option2") {
-					result = "Princess Snow White!";
-				} else if (color === "option2" && hobby === "option1") {
-					result = "Sleepying Beauty!";
-				} else if (color === "option2" && hobby === "option1") {
-					result = "Rapunzel!";
-				} else if (color === "option3" && hobby === "option1") {
-					result = "Princess Belle!";
-				} else if (color === "option3" && hobby === "option2") {
-					result = "Pocahontas!";
-				} else if (color === "option4" && hobby === "option1") {
-					result = "Princess Tiana!";
-				} else if (color === "option4" && hobby === "option2") {
-					result = "Princess Ariel!";
-				}
-				
-				// Display result on page.
-				document.getElementById("result").innerHTML = result;
-			}
-		</script>
-		<p id="result"></p>
-		
-		<br><br>
-		
-		<button onclick="calculateResult()">Get Results</button>
-    
-    		<p id="result"></p>
-		</center>
-</div>
+    <div id="header4" class="w3-container w3-flat-carrot">
+        <h1>Results</h1>
+    </div>
+    <center>
+        <div id="content4" class="w3-container">
+            <p>Based on your answers, your most like...:</p>
+        </div>
+        <script>
+            function calculateResult() {
+                var color = document.querySelector('input[name="color"]:checked').value;
+                var hobby = document.querySelector('input[name="hobby"]:checked').value;
 
+                // Calculate result based on user input.
+                var result;
+                if (color === "option1" && hobby === "option1") {
+                    result = "Princess Cinderella!";
+                } else if (color === "option1" && hobby === "option2") {
+                    result = "Princess Snow White!";
+                } else if (color === "option2" && hobby === "option1") {
+                    result = "Sleeping Beauty!";
+                } else if (color === "option2" && hobby === "option2") {
+                    result = "Rapunzel!";
+                } else if (color === "option3" && hobby === "option1") {
+                    result = "Princess Belle!";
+                } else if (color === "option3" && hobby === "option2") {
+                    result = "Pocahontas!";
+                } else if (color === "option4" && hobby === "option1") {
+                    result = "Princess Tiana!";
+                } else if (color === "option4" && hobby === "option2") {
+                    result = "Princess Ariel!";
+                }
+
+                // Display result on page.
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+        <p id="result"></p>
+        <br><br>
+        <button onclick="calculateResult()" type="button">Get Results</button>
+    </center>
+</div>
   
   
 <!--Footer!-->
