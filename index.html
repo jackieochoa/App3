@@ -145,7 +145,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             <p>Based on your answers, you are most like...:</p>
         </div>
         <script>
-            function calculateResult() {
                 var color = document.querySelector('input[name="color"]:checked').value;
                 var hobby = document.querySelector('input[name="hobby"]:checked').value;
 
@@ -171,12 +170,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
                 // Display result on page.
                 document.getElementById("result").innerHTML = result;
-            }
-
-            // Add event listener to the "Click for Results!" link.
-            document.querySelector("#three a").addEventListener("click", function() {
-                calculateResult();
-            });
         </script>
         <p id="result"></p>
     </center>
